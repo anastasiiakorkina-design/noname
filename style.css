@@ -94,6 +94,17 @@ a{text-decoration:none;color:inherit;}
 }
 .nav-cta:hover{background:var(--gold);color:var(--black) !important;}
 
+.lang-toggle{
+  display:flex;align-items:center;gap:0.4rem;
+  background:none;border:none;cursor:pointer;
+  font-family:'Inter',sans-serif;font-size:0.8rem;letter-spacing:0.05em;
+  color:var(--muted);
+}
+.lang-option{transition:color 0.3s;}
+.lang-option.active{color:var(--gold);}
+.lang-sep{color:rgba(245,243,238,0.3);}
+.lang-toggle:hover .lang-option{color:var(--champagne);}
+
 /* BUTTONS */
 .btn{
   display:inline-block;
@@ -365,5 +376,6 @@ a{text-decoration:none;color:inherit;}
 @media(max-width:700px){
   .nav-links{gap:1.2rem;font-size:0.75rem;}
   .nav-links a:not(.nav-cta){display:none;}
+  .lang-toggle{font-size:0.75rem;}
   .hero-title{font-size:2.4rem;}
 }

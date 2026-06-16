@@ -18,11 +18,16 @@
   <div class="nav-inner">
     <a href="#top" class="logo">NONAME<span>LONDON</span></a>
     <nav class="nav-links">
-      <a href="#events">Events</a>
-      <a href="#experience">Experience</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#community">Community</a>
-      <a href="#join" class="nav-cta">Reserve</a>
+      <a href="#events" data-i18n="nav.events">Events</a>
+      <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#community" data-i18n="nav.community">Community</a>
+      <a href="#join" class="nav-cta" data-i18n="nav.reserve">Reserve</a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-option active" data-lang="en">EN</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-option" data-lang="ru">RU</span>
+      </button>
     </nav>
   </div>
 </header>
@@ -32,20 +37,20 @@
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p class="eyebrow reveal">PRIVATE EVENTS · LONDON</p>
-    <h1 class="hero-title reveal">London&rsquo;s Most<br>Exclusive Social Events</h1>
-    <p class="hero-sub reveal">Curated private parties, networking evenings, rooftop gatherings and unforgettable nights for ambitious, stylish people.</p>
+    <p class="eyebrow reveal" data-i18n="hero.eyebrow">PRIVATE EVENTS · LONDON</p>
+    <h1 class="hero-title reveal" data-i18n-html="hero.title">London&rsquo;s Most<br>Exclusive Social Events</h1>
+    <p class="hero-sub reveal" data-i18n="hero.sub">Curated private parties, networking evenings, rooftop gatherings and unforgettable nights for ambitious, stylish people.</p>
     <div class="hero-ctas reveal">
-      <a href="#join" class="btn btn-gold">Reserve Your Place</a>
-      <a href="#events" class="btn btn-ghost">Upcoming Events</a>
+      <a href="#join" class="btn btn-gold" data-i18n="hero.cta1">Reserve Your Place</a>
+      <a href="#events" class="btn btn-ghost" data-i18n="hero.cta2">Upcoming Events</a>
     </div>
   </div>
   <div class="hero-stats">
-    <div class="stat"><span class="stat-num">11,000+</span><span class="stat-label">Community Members</span></div>
+    <div class="stat"><span class="stat-num">11,000+</span><span class="stat-label" data-i18n="hero.stat1">Community Members</span></div>
     <div class="stat-divider"></div>
-    <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Guests Per Event</span></div>
+    <div class="stat"><span class="stat-num">200+</span><span class="stat-label" data-i18n="hero.stat2">Guests Per Event</span></div>
     <div class="stat-divider"></div>
-    <div class="stat"><span class="stat-num">London</span><span class="stat-label">Premium Social Scene</span></div>
+    <div class="stat"><span class="stat-num" data-i18n="hero.stat3num">London</span><span class="stat-label" data-i18n="hero.stat3">Premium Social Scene</span></div>
   </div>
   <div class="scroll-indicator"><span></span></div>
 </section>
@@ -53,8 +58,8 @@
 <!-- TIMELINE -->
 <section class="timeline-section" id="timeline">
   <div class="section-head">
-    <p class="eyebrow">THE EXPERIENCE</p>
-    <h2 class="section-title">A Night in London</h2>
+    <p class="eyebrow" data-i18n="timeline.eyebrow">THE EXPERIENCE</p>
+    <h2 class="section-title" data-i18n="timeline.title">A Night in London</h2>
   </div>
   <div class="timeline">
     <div class="timeline-line"><div class="timeline-progress" id="timelineProgress"></div></div>
@@ -62,36 +67,36 @@
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <span class="timeline-time">8:00 PM</span>
-        <h3>Champagne Reception</h3>
-        <p>Arrive in style. First pour, first impressions.</p>
+        <span class="timeline-time" data-i18n="timeline.t1">8:00 PM</span>
+        <h3 data-i18n="timeline.h1">Champagne Reception</h3>
+        <p data-i18n="timeline.p1">Arrive in style. First pour, first impressions.</p>
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <span class="timeline-time">9:30 PM</span>
-        <h3>Meet New People</h3>
-        <p>Curated guest lists. Conversations that matter.</p>
+        <span class="timeline-time" data-i18n="timeline.t2">9:30 PM</span>
+        <h3 data-i18n="timeline.h2">Meet New People</h3>
+        <p data-i18n="timeline.p2">Curated guest lists. Conversations that matter.</p>
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <span class="timeline-time">11:00 PM</span>
-        <h3>Live DJ Experience</h3>
-        <p>The room shifts. The night begins.</p>
+        <span class="timeline-time" data-i18n="timeline.t3">11:00 PM</span>
+        <h3 data-i18n="timeline.h3">Live DJ Experience</h3>
+        <p data-i18n="timeline.p3">The room shifts. The night begins.</p>
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <span class="timeline-time">1:00 AM</span>
-        <h3>VIP Afterparty</h3>
-        <p>Where the unforgettable nights are made.</p>
+        <span class="timeline-time" data-i18n="timeline.t4">1:00 AM</span>
+        <h3 data-i18n="timeline.h4">VIP Afterparty</h3>
+        <p data-i18n="timeline.p4">Where the unforgettable nights are made.</p>
       </div>
     </div>
   </div>
@@ -100,67 +105,67 @@
 <!-- EVENTS -->
 <section class="events" id="events">
   <div class="section-head">
-    <p class="eyebrow">UPCOMING</p>
-    <h2 class="section-title">This Season&rsquo;s Editorial</h2>
+    <p class="eyebrow" data-i18n="events.eyebrow">UPCOMING</p>
+    <h2 class="section-title" data-i18n-html="events.title">This Season&rsquo;s Editorial</h2>
   </div>
 
   <article class="event-feature">
     <div class="event-image" style="background-image:url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=1600&auto=format&fit=crop')"></div>
     <div class="event-info">
-      <span class="event-tag">SUMMER SEASON</span>
-      <h3>The Aubrey Summer Party</h3>
+      <span class="event-tag" data-i18n="events.e1.tag">SUMMER SEASON</span>
+      <h3 data-i18n="events.e1.title">The Aubrey Summer Party</h3>
       <ul class="event-meta">
-        <li><strong>Date</strong> 20 June</li>
-        <li><strong>Location</strong> The Aubrey, Knightsbridge</li>
-        <li><strong>Attendance</strong> 200+ guests</li>
-        <li><strong>Dress Code</strong> Smart, Must Have ID 18+</li>
+        <li><strong data-i18n="events.labelDate">Date</strong> <span data-i18n="events.e1.date">20 June</span></li>
+        <li><strong data-i18n="events.labelLocation">Location</strong> <span data-i18n="events.e1.location">The Aubrey, Knightsbridge</span></li>
+        <li><strong data-i18n="events.labelAttendance">Attendance</strong> <span data-i18n="events.e1.attendance">200+ guests</span></li>
+        <li><strong data-i18n="events.labelDress">Dress Code</strong> <span data-i18n="events.e1.dress">Smart, Must Have ID 18+</span></li>
       </ul>
-      <a href="#join" class="btn btn-gold-outline">Reserve</a>
+      <a href="#join" class="btn btn-gold-outline" data-i18n="events.reserve">Reserve</a>
     </div>
   </article>
 
   <article class="event-feature reverse">
     <div class="event-image" style="background-image:url('https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?q=80&w=1600&auto=format&fit=crop')"></div>
     <div class="event-info">
-      <span class="event-tag">ROOFTOP</span>
-      <h3>Amano Rooftop Night</h3>
+      <span class="event-tag" data-i18n="events.e2.tag">ROOFTOP</span>
+      <h3 data-i18n="events.e2.title">Amano Rooftop Night</h3>
       <ul class="event-meta">
-        <li><strong>Date</strong> 13 June</li>
-        <li><strong>Location</strong> Drury House, Covent Garden</li>
-        <li><strong>Attendance</strong> 200 guests</li>
-        <li><strong>Dress Code</strong> Stylish Summer, ID 18+</li>
+        <li><strong data-i18n="events.labelDate">Date</strong> <span data-i18n="events.e2.date">13 June</span></li>
+        <li><strong data-i18n="events.labelLocation">Location</strong> <span data-i18n="events.e2.location">Drury House, Covent Garden</span></li>
+        <li><strong data-i18n="events.labelAttendance">Attendance</strong> <span data-i18n="events.e2.attendance">200 guests</span></li>
+        <li><strong data-i18n="events.labelDress">Dress Code</strong> <span data-i18n="events.e2.dress">Stylish Summer, ID 18+</span></li>
       </ul>
-      <a href="#join" class="btn btn-gold-outline">Reserve</a>
+      <a href="#join" class="btn btn-gold-outline" data-i18n="events.reserve">Reserve</a>
     </div>
   </article>
 
   <article class="event-feature">
     <div class="event-image" style="background-image:url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=1600&auto=format&fit=crop')"></div>
     <div class="event-info">
-      <span class="event-tag">SIGNATURE</span>
-      <h3>White Party London</h3>
+      <span class="event-tag" data-i18n="events.e3.tag">SIGNATURE</span>
+      <h3 data-i18n="events.e3.title">White Party London</h3>
       <ul class="event-meta">
-        <li><strong>Date</strong> TBA</li>
-        <li><strong>Location</strong> Mayfair, Private Venue</li>
-        <li><strong>Attendance</strong> 250+ guests</li>
-        <li><strong>Dress Code</strong> All White</li>
+        <li><strong data-i18n="events.labelDate">Date</strong> <span data-i18n="events.e3.date">TBA</span></li>
+        <li><strong data-i18n="events.labelLocation">Location</strong> <span data-i18n="events.e3.location">Mayfair, Private Venue</span></li>
+        <li><strong data-i18n="events.labelAttendance">Attendance</strong> <span data-i18n="events.e3.attendance">250+ guests</span></li>
+        <li><strong data-i18n="events.labelDress">Dress Code</strong> <span data-i18n="events.e3.dress">All White</span></li>
       </ul>
-      <a href="#join" class="btn btn-gold-outline">Reserve</a>
+      <a href="#join" class="btn btn-gold-outline" data-i18n="events.reserve">Reserve</a>
     </div>
   </article>
 
   <article class="event-feature reverse">
     <div class="event-image" style="background-image:url('https://images.unsplash.com/photo-1496337589254-7e19d01cec44?q=80&w=1600&auto=format&fit=crop')"></div>
     <div class="event-info">
-      <span class="event-tag">INVITE ONLY</span>
-      <h3>Secret Mayfair Gathering</h3>
+      <span class="event-tag" data-i18n="events.e4.tag">INVITE ONLY</span>
+      <h3 data-i18n="events.e4.title">Secret Mayfair Gathering</h3>
       <ul class="event-meta">
-        <li><strong>Date</strong> Revealed 48hrs prior</li>
-        <li><strong>Location</strong> Undisclosed, Mayfair</li>
-        <li><strong>Attendance</strong> Limited to 120</li>
-        <li><strong>Dress Code</strong> Black Tie Optional</li>
+        <li><strong data-i18n="events.labelDate">Date</strong> <span data-i18n="events.e4.date">Revealed 48hrs prior</span></li>
+        <li><strong data-i18n="events.labelLocation">Location</strong> <span data-i18n="events.e4.location">Undisclosed, Mayfair</span></li>
+        <li><strong data-i18n="events.labelAttendance">Attendance</strong> <span data-i18n="events.e4.attendance">Limited to 120</span></li>
+        <li><strong data-i18n="events.labelDress">Dress Code</strong> <span data-i18n="events.e4.dress">Black Tie Optional</span></li>
       </ul>
-      <a href="#join" class="btn btn-gold-outline">Reserve</a>
+      <a href="#join" class="btn btn-gold-outline" data-i18n="events.reserve">Reserve</a>
     </div>
   </article>
 </section>
@@ -173,28 +178,28 @@
   <div class="experience-blocks">
     <div class="exp-block" data-img="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1600&auto=format&fit=crop">
       <span class="exp-num">01</span>
-      <h3>Private Events</h3>
-      <p>Closed-door gatherings designed for the discerning few, never the masses.</p>
+      <h3 data-i18n="experience.h1">Private Events</h3>
+      <p data-i18n="experience.p1">Closed-door gatherings designed for the discerning few, never the masses.</p>
     </div>
     <div class="exp-block" data-img="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1600&auto=format&fit=crop">
       <span class="exp-num">02</span>
-      <h3>Premium Venues</h3>
-      <p>London&rsquo;s most coveted addresses — rooftops, private members&rsquo; clubs, hidden lounges.</p>
+      <h3 data-i18n="experience.h2">Premium Venues</h3>
+      <p data-i18n-html="experience.p2">London&rsquo;s most coveted addresses — rooftops, private members&rsquo; clubs, hidden lounges.</p>
     </div>
     <div class="exp-block" data-img="https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=1600&auto=format&fit=crop">
       <span class="exp-num">03</span>
-      <h3>Curated Guest List</h3>
-      <p>Every name considered. Every room balanced. Quality, never quantity.</p>
+      <h3 data-i18n="experience.h3">Curated Guest List</h3>
+      <p data-i18n="experience.p3">Every name considered. Every room balanced. Quality, never quantity.</p>
     </div>
     <div class="exp-block" data-img="https://images.unsplash.com/photo-1496024840928-4c417adf211d?q=80&w=1600&auto=format&fit=crop">
       <span class="exp-num">04</span>
-      <h3>Meaningful Connections</h3>
-      <p>Friendships, partnerships, romances — built in rooms made for connection.</p>
+      <h3 data-i18n="experience.h4">Meaningful Connections</h3>
+      <p data-i18n="experience.p4">Friendships, partnerships, romances — built in rooms made for connection.</p>
     </div>
     <div class="exp-block" data-img="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1600&auto=format&fit=crop">
       <span class="exp-num">05</span>
-      <h3>Exclusive Community</h3>
-      <p>11,000+ members. One standard. London&rsquo;s most stylish social circle.</p>
+      <h3 data-i18n="experience.h5">Exclusive Community</h3>
+      <p data-i18n-html="experience.p5">11,000+ members. One standard. London&rsquo;s most stylish social circle.</p>
     </div>
   </div>
 </section>
@@ -202,8 +207,8 @@
 <!-- GALLERY -->
 <section class="gallery" id="gallery">
   <div class="section-head">
-    <p class="eyebrow">MEMORIES</p>
-    <h2 class="section-title">A Season in Review</h2>
+    <p class="eyebrow" data-i18n="gallery.eyebrow">MEMORIES</p>
+    <h2 class="section-title" data-i18n="gallery.title">A Season in Review</h2>
   </div>
   <div class="gallery-track">
     <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=1200&auto=format&fit=crop')"></div>
@@ -218,25 +223,25 @@
 <!-- COMMUNITY / WALL OF MEMORIES -->
 <section class="community" id="community">
   <div class="section-head light">
-    <p class="eyebrow">VOICES</p>
-    <h2 class="section-title">The Wall of Memories</h2>
+    <p class="eyebrow" data-i18n="community.eyebrow">VOICES</p>
+    <h2 class="section-title" data-i18n="community.title">The Wall of Memories</h2>
   </div>
   <div class="polaroid-wall">
     <div class="polaroid p1">
       <div class="polaroid-photo" style="background-image:url('https://images.unsplash.com/photo-1496024840928-4c417adf211d?q=80&w=800&auto=format&fit=crop')"></div>
-      <p class="caption">"Met my business partner here."</p>
+      <p class="caption" data-i18n="community.c1">"Met my business partner here."</p>
     </div>
     <div class="polaroid p2">
       <div class="polaroid-photo" style="background-image:url('https://images.unsplash.com/photo-1525268771113-32d9e9021a97?q=80&w=800&auto=format&fit=crop')"></div>
-      <p class="caption">"My favourite London community."</p>
+      <p class="caption" data-i18n="community.c2">"My favourite London community."</p>
     </div>
     <div class="polaroid p3">
       <div class="polaroid-photo" style="background-image:url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=800&auto=format&fit=crop')"></div>
-      <p class="caption">"Every event feels different."</p>
+      <p class="caption" data-i18n="community.c3">"Every event feels different."</p>
     </div>
     <div class="polaroid p4">
       <div class="polaroid-photo" style="background-image:url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop')"></div>
-      <p class="caption">"Best people, best atmosphere."</p>
+      <p class="caption" data-i18n="community.c4">"Best people, best atmosphere."</p>
     </div>
   </div>
 </section>
@@ -246,19 +251,19 @@
   <div class="number-grid">
     <div class="number-item">
       <span class="number-value" data-target="11" data-suffix="K+">0</span>
-      <span class="number-label">Community Members</span>
+      <span class="number-label" data-i18n="numbers.l1">Community Members</span>
     </div>
     <div class="number-item">
       <span class="number-value" data-target="200" data-suffix="+">0</span>
-      <span class="number-label">Guests Per Event</span>
+      <span class="number-label" data-i18n="numbers.l2">Guests Per Event</span>
     </div>
     <div class="number-item">
       <span class="number-value" data-target="50" data-suffix="+">0</span>
-      <span class="number-label">Exclusive Events</span>
+      <span class="number-label" data-i18n="numbers.l3">Exclusive Events</span>
     </div>
     <div class="number-item">
       <span class="number-value" data-target="5" data-suffix="★">0</span>
-      <span class="number-label">Experience Rating</span>
+      <span class="number-label" data-i18n="numbers.l4">Experience Rating</span>
     </div>
   </div>
 </section>
@@ -267,11 +272,11 @@
 <section class="cta-final" id="join">
   <div class="cta-bg"></div>
   <div class="cta-content">
-    <h2>Ready For Your Next<br>Unforgettable Night?</h2>
-    <p>Join London&rsquo;s fastest-growing premium social community.</p>
+    <h2 data-i18n-html="cta.title">Ready For Your Next<br>Unforgettable Night?</h2>
+    <p data-i18n-html="cta.sub">Join London&rsquo;s fastest-growing premium social community.</p>
     <div class="cta-buttons">
-      <a href="#" class="btn btn-gold">Reserve Event</a>
-      <a href="#" class="btn btn-ghost">Join Community</a>
+      <a href="#" class="btn btn-gold" data-i18n="cta.cta1">Reserve Event</a>
+      <a href="#" class="btn btn-ghost" data-i18n="cta.cta2">Join Community</a>
     </div>
   </div>
 </section>
@@ -281,26 +286,27 @@
   <div class="footer-inner">
     <div class="footer-col">
       <a href="#top" class="logo">NONAME<span>LONDON</span></a>
-      <p>Party and entertainment service. Closed private events in London.</p>
+      <p data-i18n="footer.desc">Party and entertainment service. Closed private events in London.</p>
     </div>
     <div class="footer-col">
-      <h4>Connect</h4>
-      <a href="#">Instagram</a>
-      <a href="#">Telegram</a>
-      <a href="#">WhatsApp</a>
+      <h4 data-i18n="footer.connect">Connect</h4>
+      <a href="#" data-i18n="footer.instagram">Instagram</a>
+      <a href="#" data-i18n="footer.telegram">Telegram</a>
+      <a href="#" data-i18n="footer.whatsapp">WhatsApp</a>
     </div>
     <div class="footer-col">
-      <h4>Newsletter</h4>
+      <h4 data-i18n="footer.newsletter">Newsletter</h4>
       <form class="newsletter" onsubmit="return false">
-        <input type="email" placeholder="Your email">
-        <button type="submit">Join</button>
+        <input type="email" data-i18n-placeholder="footer.email" placeholder="Your email">
+        <button type="submit" data-i18n="footer.join">Join</button>
       </form>
     </div>
   </div>
   <div class="footer-divider"></div>
-  <p class="footer-copy">&copy; 2026 NONAME LONDON. All rights reserved.</p>
+  <p class="footer-copy" data-i18n="footer.copy">&copy; 2026 NONAME LONDON. All rights reserved.</p>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
